@@ -1,4 +1,4 @@
-# resume-application
+# Resume Builder Application
 The Resume Builder Application will allow users to build professional yet aesthetically pleasing resumes based on their given input. The application will consist of both a website as well as a mobile application.
 When utilizing the software, visitors will be prompted to input information such as work experience and education. The software will then allow the user to select their desired resume format from a set of templates. Once the resume is built, customers will have the option to save their file onto their machine as a pdf. For the mobile application users, an option to share the file as a pdf via email will replace the download option.
 In addition to these features, users will be able to create accounts to save their information and access their previously created resumes. Previously created resumes will also be adjustable if the user wishes to make changes. With an account, users will not have to fill out their desired resume information more than once, as it will be saved and  linked to their account. 
