@@ -42,3 +42,38 @@
     border: none;
     outline:none;
 }
+
+@media only screen and (min-width: 1024px) { /*will only work for desktop*/
+    .d-block{
+        width: 100%;
+    }
+
+    .startNow{
+        padding-top: 5px;
+    }
+
+}
+
+
+@media (max-width: 1024px) { /* will only work for desktop */
+
+    #banner{
+        display: none;
+    }
+
+    .img-fluid{
+        padding-top: 10vw;
+    }
+
+    .bestSelf{
+        padding: 2vw;
+    }
+
+    .startNow{
+        padding-top: 10vw;
+    }
+
+}
+
+
+
