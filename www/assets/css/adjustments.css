@@ -1,0 +1,48 @@
+.carousel-item{
+    height: 500px;
+}
+.img-wrapper{
+    position: relative;
+    width: 100%
+}
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128,128,128,0.50);
+}
+.carousel-caption{
+    padding-bottom:200px;
+}
+.services .icon-box:hover {
+    background-image: url('/assets/img/placeholder-resume.png'), linear-gradient(rgba(128,128,128,0.50),rgba(128,128,128,0.50));
+    background-blend-mode: overlay;
+}
+.samples{
+    padding-bottom: 100px;
+}
+
+.btn-start{
+    color: #ffffff;
+    background: #9db0a4;
+    border: none;
+}
+
+.btn-start:hover{
+    color: #ffffff;
+    background: #a8bfb1;
+    border: none;
+    outline:none;
+}
+
+.btn-start:active{
+    background: #a8bfb1;
+    border: none;
+    outline:none;
+}
+
+#profile{
+    display:none;
+}
