@@ -26,6 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/adjustments.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Eterna - v2.2.1
@@ -66,7 +67,7 @@
           </li>-->
           <li><a href="index.html">Home</a></li>
           <li><a href="templates.html">Templates</a></li>
-          <li class="active"><a href="profile.html">Sign In</a></li>
+          <li class="active"><a id="profile">Profile</a></li>
           <!--<li><a href="pricing.html">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>-->
@@ -82,8 +83,20 @@
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-        <h2>Profile</h2>
-        <h3 id="username">User Name</h3>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <h2>Profile</h2>
+            <h3 id="username">User Name</h3>
+          </div>
+
+          <div class="col-lg-6">
+              <button type="button" class="btn btn-edit btn-lg btn-block">Edit Profile</button>
+          </div>
+
+        </div>
+
       </div>
     </section><!-- End Breadcrumbs -->
 
@@ -231,10 +244,16 @@
           </div>
 
         </div>
+        <div>
+          <button type="button" onclick="signOut()" style="width:25%; float:right;" class="btn btn-format btn-lg btn-block">Sign Out</button>
+        </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
 
+      
+
+    </section><!-- End Portfolio Section -->
+   
     <!-- ======= Clients Section ======= -->
     <!--<section id="clients" class="clients">
       <div class="container">
@@ -293,11 +312,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/signIn.js"></script>
+  <script src="assets/js/profile.js" defer></script>
 
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
- 
+  
   <!-- firebaseUI -->
   <script src="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.js"></script>
 

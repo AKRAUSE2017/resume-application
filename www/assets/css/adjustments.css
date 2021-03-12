@@ -24,10 +24,18 @@
     padding-bottom: 100px;
 }
 
-.btn-start{
+.btn-format{
     color: #ffffff;
     background: #9db0a4;
     border: none;
+}
+
+.btn-edit{
+    color: #ffffff;
+    background: #9db0a4;
+    border: none;
+    width: 50%;
+    float: right;
 }
 
 .btn-start:hover{

@@ -1,5 +1,15 @@
-var user;
-var isSignedIn;
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    var name = user.displayName;
+    document.getElementById("signIn").style.display = "none";
+    document.getElementById("profile").innerHTML = name;
+    document.getElementById("profile").style.display = "block";
+  }else{
+      console.log("error: no user found");
+      document.getElementById("signIn").style.display = "block";
+      document.getElementById("profile").style.display = "none";
+  }
+});
 
 function signIn(){
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -12,7 +22,8 @@ function signIn(){
       // This gives you a Google Access Token. You can use it to access the Google API.
       var token = credential.accessToken;
       // The signed-in user info.
-      user = result.user;
+      var user = result.user;
+      document.cookie = "username="+user.displayName;
       // ...
     }).catch((error) => {
       // Handle Errors here.
@@ -26,17 +37,11 @@ function signIn(){
     });
     firebase.auth().onAuthStateChanged(user => {
       if(user){
-        var name = user.displayName;
-        document.getElementById("signIn").style.display = "none";
-        document.getElementById("profile").innerHTML = name;
-        document.getElementById("profile").style.display = "block";
+      var name = user.displayName;
+      document.getElementById("signIn").style.display = "none";
+      document.getElementById("profile").innerHTML = name;
+      document.getElementById("profile").style.display = "block";
       }
-   });
+    });
 }
 
-/*function goToProfile(user){
-  console.log("here");
-  window.location.href = "profile.html"
-  var name = user.name;
-  document.getElementById("username").innerHTML = name;
-}*/
